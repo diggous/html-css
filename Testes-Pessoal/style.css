@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'hacker';
+    src: url(fonts/hacka___.ttf);
+}
+
+:root {
+    --cor0: #36BFB1;
+    --cor1: #038C73;
+    --cor2: #02735E;
+    --cor3: #014034;
+    --cor4: #0D0D0D;
+
+    --hacker: 'hacker';
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor0);
+}
+
+header {
+    background-image: linear-gradient(to top, var(--cor4), var(--cor3));
+    color: var(--cor0);
+    text-align: center;
+}
+
+header h1 {
+    padding: 50px;
+    margin: auto;
+    font-family: var(--hacker);
+    font-size: 4em;
+}
+
+header > div.destaque {
+    color: white;
+}
+
+header div {
+
+}
+
+header div > p{
+    display: none;
+}
+
+header div:hover > p {
+    display: block;
+    color: var(--cor0);
+}
+
+nav {
+    padding: 10px;
+    background-color: var(--cor4);
+    box-shadow: 0px 6px 12px 4px rgba(0, 0, 0, 0.211);
+}
+
+nav a {
+    padding: 10px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    color: white;
+}
+
+nav a:hover {
+    background-color: var(--cor0);
+}
+
+
+div {
+    text-align: center;
+    min-width: 300px;
+    max-width: 1050px;
+    margin: auto;
+    padding: 30px;
+    background-color: var(--cor1);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+div > p {
+    display: none;
+    color: white;
+   
+}
+
+div:hover{
+    color: var(--cor3);
+    font-size: 3em;
+}
+
+div:hover > p{
+    display: block;
+    color: white;
+    font-size: 0.4em;
+    text-align: center;
+}
+
+main {
+    padding: 0px 30px;
+    max-width: 1050px;
+    min-width: 300px;
+    margin: auto;
+    
+}
+
+main article{
+    background-color: white;
+    border-radius: 20px;
+}
+
+main h1 {
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+    color: var(--cor3);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main h2 {
+    text-indent: 10px;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    color: var(--cor3);
+}
+
+main p {
+    text-align: justify;
+    text-indent: 30px;
+    margin: auto;
+    padding: 10px;
+}
+
+footer {
+    background-color: var(--cor4);
+    color: white;
+    text-align: center;
+    padding: 0px 0px 10px 0px;
+    margin: auto;
+}
+
+footer p {
+    padding: 10px;
+    margin: 16px 0px 0px 0px;
+}
+
+footer p#ass {
+    font-family: var(--hacker);
+    margin: 0px;
+    font-size: 2em;
+}
