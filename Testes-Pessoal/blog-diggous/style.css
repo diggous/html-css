@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'hacker';
+    src: url(fontes/hacka___.ttf);
+}
+
+body {
+    background: black url(imagens/hack.jpeg) center center no-repeat fixed;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    background-color: white;
+    max-width: 500px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    box-shadow: 1px 5px 14px rgba(0, 0, 0, 0.451);
+    padding: 10px;
+    margin: auto;
+}
+main > div > h1 {
+    font-family: 'hacker';
+    text-align: center;
+    color: darkgreen;
+    margin: 20px 0px 0px 0px;
+}
+main > div > p {
+    text-align: center;
+    color: darkolivegreen;
+    padding: 0px 20px 20px 20px;
+    margin: 2px 20px 20px 20px;
+}
+article > h1 {
+    background-image: linear-gradient(to right, gray, transparent);
+    padding: 5px;
+    margin: -10px;
+}
+article > p {
+    text-align: justify;
+    text-indent: 20px;
+}
