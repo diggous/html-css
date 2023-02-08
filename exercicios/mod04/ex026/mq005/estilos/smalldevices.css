@@ -17,41 +17,65 @@ header {
 
 header h1 {
     text-align: center;
+    text-shadow: 1px 1px 1px black;
     color: white;
-    padding: 20px;
+    padding: 10px;
     font-variant: small-caps;
     font-size: 4em;
 }
-header menu a:hover {
-    background-color: rgb(0, 0, 208);
+
+i#burguer {
+    background-color: rgba(0, 0, 0, 0.715);
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+i#burguer:hover {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.715);
+}
+
+header menu {
+    display: none;
+}
+
+header menu li {
+    list-style-type: none;
 }
 
 header menu a {
+    display: block;
+    padding: 10px;
     text-decoration: none;
-    color: white;
-    display: inline-block;
-    padding: 7px;
+    text-align: center;
     background-color: darkblue;
-    margin: 5px;
-    box-shadow: 1px 1px 1px white;
+    color: white;
+    border-top: 2px solid lightblue;
 }
 
-main article {
+header menu a:hover {
+background-color: rgb(0, 0, 208);
+}
+
+main {
+    width: 90vw;
     background-color: white;
-    border-radius: 10px;
-    max-width: 450px;
-    display: block;
     margin: auto;
-    font-size: 1.5em;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
 }
 
 main article h2 {
     text-align: center;
-    padding: 20px;
+    padding-bottom: 20px;
 }
 
 main article p {
     text-align: justify;
     text-indent: 20px;
-    padding: 5px;
+    margin-bottom: 20px;
 }
